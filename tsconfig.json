@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"target": "ES2018",
+		"module": "commonjs",
+		"outDir": "dist",
+		"rootDir": "src",
+		"lib": ["es2016", "es2017.object", "es2017.string", "dom"],
+		"declaration": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": false,
+		"sourceMap": true,
+		"inlineSourceMap": false,
+		"inlineSources": false,
+		"experimentalDecorators": true,
+		"strictPropertyInitialization": false,
+		"allowSyntheticDefaultImports": true
+	},
+	"exclude": ["cdk.out", "packages/**/*.test.ts", "packages/**/dist/**"],
+	"references": [
+		{
+			"path": "./packages/shared"
+		},
+		{
+			"path": "./packages/stack"
+		},
+		{
+			"path": "./packages/user-api"
+		}
+	]
+}
